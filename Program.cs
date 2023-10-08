@@ -38,13 +38,21 @@ namespace ExercicioemDupla
                     case 1:
                         foreach (var colaborador in colaboradores)
                         {
+                            Console.WriteLine("Digite o nome: ");
                             colaborador.Funcionario.Nome = Console.ReadLine();
+                            Console.WriteLine("Digite o sobrenome: ");
                             colaborador.Funcionario.Sobrenome = Console.ReadLine();
+                            Console.WriteLine("Digite a idade: ");
                             colaborador.Funcionario.Idade = int.Parse(Console.ReadLine());
+                            Console.WriteLine("Digite a data de nascimento: ");
                             colaborador.Funcionario.DataNascimento = DateOnly.Parse(Console.ReadLine());
+                            Console.WriteLine("Digite a matricula: ");
                             colaborador.Matricula = int.Parse(Console.ReadLine());
+                            Console.WriteLine("Digite o cargo: ");
                             colaborador.Cargo = Console.ReadLine();
+                            Console.WriteLine("Digite a data de contratação: ");
                             colaborador.DataContratacao = DateOnly.Parse(Console.ReadLine());
+                            Console.WriteLine("Digite o salário: ");
                             colaborador.SalarioMensal = double.Parse(Console.ReadLine());
                             Console.WriteLine("");
 
